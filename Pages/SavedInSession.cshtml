@@ -1,0 +1,10 @@
+﻿@page
+@model SavedInSessionModel
+@{
+	ViewData["Title"] = "Data in session";
+}
+<p>Dane w zapisane w sesji</p>
+@if (Model.sessionData != null)
+{
+	<p>@Model.sessionData</p>
+}
